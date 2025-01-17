@@ -8,10 +8,42 @@
     /* Globalt oppsett */
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #000;
       color: #fff;
       text-align: center;
+      scroll-behavior: smooth; /* Gir myk scrolling */
+    }
+
+    /* Navigasjonsbar */
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #111;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    }
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    .navbar li {
+      margin: 0 20px;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 10px 15px;
+    }
+    .navbar a:hover {
+      background-color: #ffcc00;
+      color: #000;
+      border-radius: 5px;
     }
 
     /* Hero-seksjon */
@@ -23,6 +55,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding: 20px;
     }
     .hero h1 {
       font-size: 4rem;
@@ -115,15 +148,25 @@
   </style>
 </head>
 <body>
+  <!-- Navigasjonsbar -->
+  <div class="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#tokenomics">Tokenomics</a></li>
+      <li><a href="#socials">Socials</a></li>
+    </ul>
+  </div>
+
   <!-- Hero Section -->
-  <div class="hero">
+  <div id="hero" class="hero">
     <h1>Welcome to MemeCoin</h1>
     <p>The next big meme in crypto. Join us as we take over the blockchain world!</p>
     <button onclick="alert('Thank you for joining!')">Join Now</button>
   </div>
 
   <!-- About Section -->
-  <div class="about">
+  <div id="about" class="about">
     <h2>About MemeCoin</h2>
     <p>
       MemeCoin is a community-driven cryptocurrency aiming to revolutionize how memes and blockchain interact.
@@ -132,7 +175,7 @@
   </div>
 
   <!-- Tokenomics Section -->
-  <div class="tokenomics">
+  <div id="tokenomics" class="tokenomics">
     <h2>Tokenomics</h2>
     <ul>
       <li>Total Supply: 1,000,000,000</li>
@@ -144,7 +187,7 @@
   </div>
 
   <!-- Social Media Section -->
-  <div class="socials">
+  <div id="socials" class="socials">
     <h2>Connect with us</h2>
     <a href="https://t.me/yourtelegram" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
