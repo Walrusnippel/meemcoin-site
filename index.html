@@ -10,21 +10,26 @@
       font-family: Arial, sans-serif;
       background-color: #f0f0f0;
       color: #333;
-      text-align: center;
     }
 
     /* Hero-seksjon */
     .hero {
+      height: 100vh;
       background: linear-gradient(to right, #00c6ff, #0072ff);
       color: white;
-      padding: 100px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
     }
     .hero h1 {
-      font-size: 3rem;
+      font-size: 4rem;
     }
     .hero button {
       margin-top: 20px;
-      padding: 10px 20px;
+      padding: 15px 30px;
       font-size: 1rem;
       background-color: #fff;
       color: #0072ff;
@@ -37,36 +42,69 @@
       color: white;
     }
 
-    /* Bildegalleri */
-    .gallery {
-      padding: 50px 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      max-width: 1200px;
+    /* Om oss-seksjon */
+    .about {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #fff;
+    }
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .about p {
+      font-size: 1.2rem;
+      max-width: 800px;
       margin: 0 auto;
     }
+
+    /* Tokenomics-seksjon */
+    .tokenomics {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #f8f8f8;
+    }
+    .tokenomics h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .tokenomics p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .tokenomics ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .tokenomics ul li {
+      margin: 10px 0;
+      font-size: 1.1rem;
+    }
+
+    /* Galleri */
+    .gallery {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    .gallery h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
     .gallery img {
-      width: 100%;
+      width: 300px;
+      margin: 10px;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
-    /* Sosiale medier */
-    .socials {
-      margin-top: 40px;
-    }
-    .socials img {
-      width: 50px;
-      margin: 10px;
-    }
-
     /* Footer */
     footer {
-      margin-top: 50px;
       background-color: #333;
-      color: #fff;
-      padding: 10px;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
     }
   </style>
 </head>
@@ -74,30 +112,36 @@
   <!-- Hero Section -->
   <div class="hero">
     <h1>Welcome to MemeCoin</h1>
-    <p>The future of memes and crypto.</p>
+    <p>The next generation of memes and crypto.</p>
     <button onclick="alert('Thanks for joining! Stay tuned!')">Join Now</button>
   </div>
 
-  <!-- Galleri -->
+  <!-- About Section -->
+  <div class="about">
+    <h2>About MemeCoin</h2>
+    <p>MemeCoin is the future of decentralized, community-driven crypto innovation. Powered by memes, built for the future.</p>
+  </div>
+
+  <!-- Tokenomics Section -->
+  <div class="tokenomics">
+    <h2>Tokenomics</h2>
+    <p>Here's how MemeCoin is structured:</p>
+    <ul>
+      <li>Total Supply: 1,000,000,000</li>
+      <li>Burn Rate: 5%</li>
+      <li>Community Rewards: 50%</li>
+      <li>Liquidity Pool: 30%</li>
+      <li>Marketing & Development: 15%</li>
+    </ul>
+  </div>
+
+  <!-- Gallery Section -->
   <div class="gallery">
+    <h2>Art Gallery</h2>
     <img src="https://via.placeholder.com/300?text=Art+1" alt="Art 1">
     <img src="https://via.placeholder.com/300?text=Art+2" alt="Art 2">
     <img src="https://via.placeholder.com/300?text=Art+3" alt="Art 3">
     <img src="https://via.placeholder.com/300?text=Art+4" alt="Art 4">
-  </div>
-
-  <!-- Sosiale medier -->
-  <div class="socials">
-    <h2>Follow us:</h2>
-    <a href="https://t.me/yourtelegram" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
-    </a>
-    <a href="https://twitter.com/yourtwitter" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-    </a>
-    <a href="https://bscscan.com/address/yourCA" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Contract Address">
-    </a>
   </div>
 
   <!-- Footer -->
