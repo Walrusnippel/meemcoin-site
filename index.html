@@ -12,6 +12,8 @@
       color: #333;
       text-align: center;
     }
+
+    /* Hero-seksjon */
     .hero {
       background: linear-gradient(to right, #00c6ff, #0072ff);
       color: white;
@@ -34,6 +36,23 @@
       background-color: #0072ff;
       color: white;
     }
+
+    /* Bildegalleri */
+    .gallery {
+      padding: 50px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Sosiale medier */
     .socials {
       margin-top: 40px;
     }
@@ -41,6 +60,8 @@
       width: 50px;
       margin: 10px;
     }
+
+    /* Footer */
     footer {
       margin-top: 50px;
       background-color: #333;
@@ -57,7 +78,15 @@
     <button onclick="alert('Thanks for joining! Stay tuned!')">Join Now</button>
   </div>
 
-  <!-- Social Media Section -->
+  <!-- Galleri -->
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300" alt="Art 1">
+    <img src="https://via.placeholder.com/300" alt="Art 2">
+    <img src="https://via.placeholder.com/300" alt="Art 3">
+    <img src="https://via.placeholder.com/300" alt="Art 4">
+  </div>
+
+  <!-- Sosiale medier -->
   <div class="socials">
     <h2>Follow us:</h2>
     <a href="https://t.me/yourtelegram" target="_blank">
