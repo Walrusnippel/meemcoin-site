@@ -51,6 +51,23 @@
       border: 2px solid #fff;
     }
 
+    /* Sosiale medier seksjon */
+    .socials {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .socials img {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+    }
+
     /* Om oss-seksjon */
     .about {
       padding: 50px 20px;
@@ -66,20 +83,6 @@
       font-size: 1.2rem;
       max-width: 800px;
       margin: auto;
-    }
-
-    /* Galleri */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 50px 20px;
-    }
-
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     /* Footer */
@@ -106,7 +109,7 @@
     <div>
       <h1>Welcome to MemeCoin</h1>
       <p>The next generation of crypto memes starts here.</p>
-      <button>Join Now</button>
+      <button onclick="alert('Thank you for joining! Stay tuned!')">Join Now</button>
     </div>
   </div>
 
@@ -116,12 +119,18 @@
     <p>MemeCoin is the future of decentralized, community-driven crypto innovation. Powered by memes, built for the future.</p>
   </div>
 
-  <!-- Galleri -->
-  <div class="gallery">
-    <img src="https://via.placeholder.com/300" alt="Art 1">
-    <img src="https://via.placeholder.com/300" alt="Art 2">
-    <img src="https://via.placeholder.com/300" alt="Art 3">
-    <img src="https://via.placeholder.com/300" alt="Art 4">
+  <!-- Sosiale medier-seksjon -->
+  <div class="socials">
+    <h2>Connect with us:</h2>
+    <a href="https://t.me/yourtelegram" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+    </a>
+    <a href="https://twitter.com/yourtwitter" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+    </a>
+    <a href="https://bscscan.com/address/yourCA" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Contract Address">
+    </a>
   </div>
 
   <!-- Footer -->
