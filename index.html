@@ -3,50 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MemeCoin | To the Moon 🚀</title>
+  <title>MemeCoin</title>
   <style>
+    /* Generelle stiler */
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      color: #333;
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #000;
+      color: #fff;
+    }
+
+    /* Hero-seksjon */
+    .hero {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 40px;
+    }
+
+    .hero button {
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background: #000;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+
+    /* Om oss-seksjon */
+    .about {
+      padding: 50px 20px;
       text-align: center;
     }
-    header {
-      background-color: #ffcc00;
-      padding: 20px;
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
     }
-    header h1 {
-      margin: 0;
+
+    .about p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: auto;
     }
-    .section {
-      padding: 40px 20px;
+
+    /* Galleri */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 50px 20px;
     }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Footer */
     footer {
-      background-color: #333;
-      color: white;
-      padding: 10px 0;
+      background: #111;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #00c6ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to MemeCoin 🚀</h1>
-    <p>The future of memes and crypto.</p>
-  </header>
-  <div class="section">
-    <h2>Why MemeCoin?</h2>
-    <p>Join the revolution. Pump it, moon it!</p>
+  <!-- Hero-seksjon -->
+  <div class="hero">
+    <div>
+      <h1>Welcome to MemeCoin</h1>
+      <p>The next generation of crypto memes starts here.</p>
+      <button>Join Now</button>
+    </div>
   </div>
-  <div class="section">
-    <h2>Tokenomics</h2>
-    <p>Total Supply: 1,000,000,000</p>
-    <p>Burn Rate: 5%</p>
-    <p>Community Rewards: 50%</p>
+
+  <!-- Om oss-seksjon -->
+  <div class="about">
+    <h2>About MemeCoin</h2>
+    <p>MemeCoin is the future of decentralized, community-driven crypto innovation. Powered by memes, built for the future.</p>
   </div>
+
+  <!-- Galleri -->
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300" alt="Art 1">
+    <img src="https://via.placeholder.com/300" alt="Art 2">
+    <img src="https://via.placeholder.com/300" alt="Art 3">
+    <img src="https://via.placeholder.com/300" alt="Art 4">
+  </div>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 MemeCoin. All rights reserved.</p>
+    <p>&copy; 2025 MemeCoin. Built with 💻 and memes. <a href="#">Privacy Policy</a></p>
   </footer>
 </body>
 </html>
