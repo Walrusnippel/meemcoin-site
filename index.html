@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MemeCoin</title>
   <style>
-    /* Globalt oppsett */
+    /* Global styles */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #000;
+      background-color: #001f3f;
       color: #fff;
       text-align: center;
-      scroll-behavior: smooth; /* Gir myk scrolling */
+      scroll-behavior: smooth; /* Smooth scrolling */
     }
 
-    /* Navigasjonsbar */
+    /* Navbar */
     .navbar {
       position: sticky;
       top: 0;
-      background-color: #111;
+      background-color: #003566;
       padding: 10px 0;
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -41,15 +41,15 @@
       padding: 10px 15px;
     }
     .navbar a:hover {
-      background-color: #ffcc00;
-      color: #000;
+      background-color: #00509e;
+      color: #fff;
       border-radius: 5px;
     }
 
-    /* Hero-seksjon */
+    /* Hero section */
     .hero {
       height: 100vh;
-      background: url('https://via.placeholder.com/1920x1080?text=Hero+Background') no-repeat center center/cover;
+      background: linear-gradient(to right, #001f3f, #00509e);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -69,20 +69,32 @@
     .hero button {
       padding: 15px 30px;
       font-size: 1rem;
-      background-color: #ffcc00;
-      color: #000;
+      background-color: #007bff;
+      color: #fff;
       border: none;
       border-radius: 5px;
       cursor: pointer;
     }
     .hero button:hover {
-      background-color: #ffd633;
+      background-color: #0056b3;
     }
 
-    /* Om oss-seksjon */
+    /* About image */
+    .about-image {
+      padding: 20px 0;
+      background-color: #003566;
+    }
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* About section */
     .about {
       padding: 60px 20px;
-      background-color: #111;
+      background-color: #00274d;
     }
     .about h2 {
       font-size: 2.5rem;
@@ -95,10 +107,10 @@
       line-height: 1.8;
     }
 
-    /* Tokenomics-seksjon */
+    /* Tokenomics section */
     .tokenomics {
       padding: 60px 20px;
-      background-color: #222;
+      background-color: #003566;
     }
     .tokenomics h2 {
       font-size: 2.5rem;
@@ -113,10 +125,10 @@
       margin: 10px 0;
     }
 
-    /* Sosiale medier */
+    /* Social media */
     .socials {
       padding: 40px 20px;
-      background-color: #111;
+      background-color: #00274d;
     }
     .socials h2 {
       font-size: 2.5rem;
@@ -133,13 +145,13 @@
 
     /* Footer */
     footer {
-      background-color: #000;
+      background-color: #001f3f;
       color: #fff;
       padding: 20px;
       font-size: 0.9rem;
     }
     footer a {
-      color: #ffcc00;
+      color: #007bff;
       text-decoration: none;
     }
     footer a:hover {
@@ -148,7 +160,7 @@
   </style>
 </head>
 <body>
-  <!-- Navigasjonsbar -->
+  <!-- Navbar -->
   <div class="navbar">
     <ul>
       <li><a href="#hero">Home</a></li>
@@ -163,6 +175,11 @@
     <h1>Welcome to MemeCoin</h1>
     <p>The next big meme in crypto. Join us as we take over the blockchain world!</p>
     <button onclick="alert('Thank you for joining!')">Join Now</button>
+  </div>
+
+  <!-- Image above About -->
+  <div class="about-image">
+    <img src="https://via.placeholder.com/1200x400?text=About+Image" alt="About Image">
   </div>
 
   <!-- About Section -->
@@ -192,8 +209,8 @@
     <a href="https://t.me/yourtelegram" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
     </a>
-    <a href="https://twitter.com/yourtwitter" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+    <a href="https://x.com/yourxprofile" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X">
     </a>
     <a href="https://bscscan.com/address/yourCA" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Contract Address">
